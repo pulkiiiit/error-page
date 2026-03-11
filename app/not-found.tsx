@@ -28,47 +28,6 @@ export default function NotFound() {
             Sorry, the page you're looking for doesn't exist or has been moved.
           </p>
         </div>
-
-        {/* Helpful Info */}
-        <div className="bg-muted/30 border border-border/50 rounded-lg p-6 mb-8">
-          <h3 className="text-sm font-semibold text-muted-foreground mb-3">Where to go next?</h3>
-          <ul className="space-y-3">
-            <li>
-              <Link
-                href="/"
-                className="flex items-center gap-2 text-sm text-accent hover:text-accent/80 transition-colors duration-200 font-medium"
-              >
-                <Home className="w-4 h-4" />
-                Back to homepage
-                <ArrowRight className="w-3 h-3 ml-auto opacity-0 group-hover:opacity-100" />
-              </Link>
-            </li>
-            <li>
-              <a
-                href="javascript:history.back()"
-                className="flex items-center gap-2 text-sm text-accent hover:text-accent/80 transition-colors duration-200 font-medium"
-              >
-                <span className="w-4 h-4 flex items-center justify-center text-xs">←</span>
-                Go back to previous page
-                <ArrowRight className="w-3 h-3 ml-auto opacity-0 group-hover:opacity-100" />
-              </a>
-            </li>
-          </ul>
-        </div>
-
-        {/* Action Button */}
-        <Link
-          href="/"
-          className="inline-flex w-full items-center justify-center gap-2 px-6 py-3 bg-accent text-accent-foreground font-semibold rounded-lg hover:bg-accent/90 transition-colors duration-200"
-        >
-          <Home className="w-4 h-4" />
-          Go to homepage
-        </Link>
-
-        {/* Additional Help */}
-        <p className="text-xs text-muted-foreground/50 text-center mt-8">
-          If you think this is a mistake, <a href="mailto:support@example.com" className="text-accent hover:underline">contact support</a>
-        </p>
       </div>
     </div>
   )
